@@ -13,6 +13,16 @@
         <q-page padding>
           <!-- Welcome Screen -->
           <div v-if="!quizStarted && !showResults" class="text-center q-pa-lg">
+            <q-banner class="bg-orange-1 text-orange-9 q-mb-md">
+              <template v-slot:avatar>
+                <q-icon name="info" color="orange" />
+              </template>
+              <div class="text-body2">
+                <strong>免責事項：</strong>このページはClaude（AI）の機能を試すために作成されたものです。<br>
+                内容の正確性については保証いたしません。実際の法的判断については必ず専門家にご相談ください。
+              </div>
+            </q-banner>
+            
             <q-card class="welcome-card q-ma-md">
               <q-card-section>
                 <div class="text-h4 q-mb-lg">遺失物法クイズ</div>
